@@ -1,12 +1,13 @@
 class House
 
   attr_reader :price,
-              :address
+              :address,
+              :rooms
 
   def initialize (price, address)
     @price = price
     @address = address
-    @house_rooms = []
+    @rooms = []
 
   end
 
@@ -14,6 +15,8 @@ class House
     @price.gsub(/\$/,'').to_i
   end
 
-
+  def add_room(new_room)
+    @rooms << new_room
+  end
 
 end
