@@ -34,5 +34,21 @@ class House
     end
   end
 
+  # def house_area
+  #   @length * @width.to_i
+  # end
+
+  def house_area
+    @rooms.each do |room_areas|
+      room_areas.room.room_areas.join
+    end
+  end
+
+  def details = {}
+    price_details = Hash.new(price)
+    address_details = Has.new(@address)
+  end
+
+
 
 end
