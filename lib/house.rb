@@ -26,4 +26,13 @@ class House
       false
     end
   end
+
+  def rooms_from_category(room_type)
+    @room_type = room_type
+    @rooms.select do |room|
+      room.category == @room_type
+    end
+  end
+
+
 end
